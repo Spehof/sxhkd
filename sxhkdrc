@@ -1,0 +1,43 @@
+# Basic keybinds
+
+## Just for test
+alt + z
+	notify-send Im_ork
+
+##~~~~~~~~~~reload config~~~~~~~~~~
+
+## Make sxhkd reload it's configuration file
+alt + r
+	kill `pgrep sxhkd` && sxhkd &
+
+##~~~~~~~~~~program stuptup~~~~~~~~~~
+
+## Program launcher
+alt + x
+	dmenu_run
+
+## Unicode simbold to clipboard
+super + shift + u
+
+## Open Firefox
+super + shift + f
+	firefox
+
+## Start terminal emulator
+super + shift + Return
+	gnome-terminal
+
+##~~~~~~~~~~power supply~~~~~~~~~~
+
+## Power off
+super + shift + BackSpace
+	prompt "Are you sure shutdown PC?" "shutdown now"
+	
+
+## Reboot
+super + ctrl + shift + BackSpace
+	prompt "Are you sure reboot PC?" "shutdown -r now"
+
+## Suspend
+shift + BackSpace
+	prompt "Are you sure suspend PC?" "systemctl suspend"
