@@ -18,6 +18,7 @@ alt + x
 
 ## Unicode simbold to clipboard
 super + shift + u
+	dmenuunicode
 
 ## Open Firefox
 super + shift + f
